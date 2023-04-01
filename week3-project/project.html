@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐱</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #d6a086;
+        font-family: "Roboto", sans-serif;
+        font-size: 40px;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid rgb(255, 237, 237, 0.4);
+        border-width: 5px;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 25px;
+        color: #966e5c;
+        font-family: monospace;
+        background-color: rgb(208, 246, 255, 0.5);
+      }
+
+      body {
+        background: linear-gradient(
+          89.9deg,
+          rgb(208, 246, 255) 0.1%,
+          rgb(255, 237, 237) 47.9%,
+          rgb(255, 255, 231) 100.2%
+        );
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 17px;
+        margin: 20px 0 10px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #966e5c;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        font-family: "Roboto", sans-serif;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.12);
+        margin: 50px auto;
+        background: #fff;
+        max-width: 550px;
+        padding: 40px;
+        border-radius: 16px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .video {
+        color: #966e5c;
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .video :hover {
+        text-decoration: none;
+      }
+
+      .footer {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>😽I love cats😽</h1>
+      <h2>Especially Miyu</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/599/original/miyu.jpg?1680363513"
+        alt="cutest cat in the world"
+      />
+      <p>
+        This is Miyu! 5-kilogram cotton ball who happens to be a Pisces man.
+        Still, I love him. He is extremely particular about keeping himself
+        clean and can be quite emotional at times, making him a bit of a
+        crybaby. His paws are huge, and we share a love for cheese. He enjoys
+        watching TV and is hunting mosquitoes. He likes to have a pillow and
+        blanket for his naptime. Although I wish he were more open to wearing
+        baby clothes, I also hope he doesn't disturb my birds😠.
+      </p>
+      <a href="https://youtu.be/SWY98maZGoQ" target="_blank" class="video">
+        One of the videos he likes to watch
+      </a>
+      <a href="https://www.youtube.com/watch?v=Gnm3hIcjiCQ">
+        <button class="button">👉 Dancing cat video</button>
+      </a>
+      <p class="footer">This page was built by Ceren</p>
+    </div>
+    <script>
+      function watch() {
+        let name = prompt("what is your name?");
+        let pet = prompt("do you have a pet? yes or no").toLowerCase().trim();
+
+        if (pet == "yes") {
+          let petname = prompt("what is your pets name?");
+          alert("tell " + petname + " i said hi💗 enjoy the video!");
+        } else {
+          alert("too bad, enjoy the video tho");
+        }
+      }
+
+      let ytbutton = document.querySelector(".button");
+      ytbutton.addEventListener("click", watch);
+    </script>
+  </body>
+</html>
