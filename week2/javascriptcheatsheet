@@ -1,0 +1,200 @@
+To open delevoper tools:
+Windows = Control + Shift + J
+Mac = Command + Option + I
+
+\*Variable creation:
+let school = "SheCodes";
+let fullPackage = "SheCodes Pro";
+let projects = 4;
+let awesome = true;
+
+\*Variable operations
+let x = 2;
+let y = 3;
+let z = x + y; // 5
+
+let city = "Lisbon";
+let country = "Portugal";
+let place = city + " " + country; //Lisbon Portugal
+
+\*Variable data types
+let age = 23; // Number
+let name = "Julie"; // String
+let canCode = true; // Boolean, could also be false
+
+\*Internal JavaScript
+
+<body>
+  <h1>
+    SheCodes
+  </h1>
+  <script>
+    alert("Hello SheCodes");
+  </script>
+</body>
+Add your script tag to the bottom of your body. Anything inside script is JavaScript.
+
+\*Alert
+alert("Olá");
+
+let name = "Angela";
+alert(name);
+
+\*Prompt
+let firstName = prompt("What is your first name");
+let lastName = prompt("What is your last name");
+let fullName = firstName + " " + lastName;
+alert(fullName);
+
+\*Console.log
+
+console.log(name);
+console.log("Let's code!");
+Outputs a message to the web console.
+
+_Comments
+// this is a comment
+/_ or this is a comment \*/
+
+\*Comparision and Logical Operators
+2 > 3 // false
+2 < 3 // true
+2 <= 2 // true
+3 >= 2 // true
+2 === 5 // false
+2 !== 3 // true
+1 + 2 === 4 // false
+
+\*If statement
+let country = prompt("What country are you from?");
+
+if (country === "Portugal") {
+alert("You are cool");
+}
+
+if (country !== "Portugal") {
+alert("Too bad for you");
+}
+
+\*If else statement
+let age = prompt("How old are you?");
+
+if (age < 18) {
+alert("You cannot apply");
+} else {
+alert("You can apply");
+}
+
+\*Nested if else statements
+if (age < 18) {
+alert("you can't apply");
+} else {
+if (age > 120) {
+alert("you can't apply");
+} else {
+alert("you can apply");
+}
+}
+
+\*Logical Or
+if (age < 18 || gender === "male") {
+alert("You can't join SheCodes 👩‍💻");
+}
+
+\*Logical And
+if (continent === "Europe" && language === "Portuguese") {
+alert("You are from Portugal 🇵🇹");
+} else {
+alert("You are not from Portugal");
+}
+
+\*Functions
+function sayFact() {
+let name = prompt("What's your name?");
+
+if (name === "Sofia") {
+alert("Your name comes from the Greek -> Sophia");
+}
+}
+
+sayFact();
+
+\*Function Parameters
+function fullName(firstName, lastName) {
+alert(firstName + " " + lastName);
+}
+
+let firstName = prompt("What's your first name?");
+let lastName = prompt("What's your last name?");
+fullName(firstName, lastName);
+fullName("Kate", "Robinson");
+
+\*Function return
+function add(x, y) {
+return x + y;
+}
+
+let result = add(3, 4);
+let result2 = add(result, 0);
+
+function getFullName(firstName, lastName) {
+let fullName = firstName + " " + lastName;
+return fullName;
+}
+
+let userFullName = getFullName("Kate", "Robinson");
+alert(userFullName); // Kate Robinson
+alert(getFullName("Julie", "Smith")); // Julie Smith
+
+\*QuerySelector
+let li = document.querySelector("li");
+let day = document.querySelector(".day");
+let paragraph = document.querySelector("ul#list p");
+
+Returns the first element (if any) on the page matching the selector.
+
+\*QuerySelectorAll
+let lis = document.querySelectorAll("li");
+let paragraphs = document.querySelectorAll("li#special p");
+
+Returns all elements (if any) on the page matching the selector.
+
+\*Creating an event listener
+function sayHi() {
+alert("hi");
+}
+
+let element = document.querySelector("#city");
+element.addEventListener("click", sayHi);
+
+The sayHi function will be executed each time the city element is clicked. Click is the most common event type but you can also use click | mouseenter | mouseleave | mousedown | mouseup | mousemove | keydown | keyup.
+
+\*HTML content 
+let li = document.querySelector("li")
+li.innerHTML = "Hello World";
+
+Update the HTML content of the selected element
+
+*String Concatenation
+let firstName = "Julie";
+let lastName = "Johnson";
+let fullName = firstName + " " + lastName; // "Julie Johnson"
+
+//or
+let fullName = `${firstName} ${lastName}`;
+
+*Template Literals
+let city = "Denver";
+let sentence = `Kate is from ${city}`; // Kate is from Denver
+
+*JS Functions Parameters
+function fullName(firstName, lastName) {
+  alert(firstName + " " + lastName);
+}
+
+let firstName = prompt("What's your first name?");
+let lastName = prompt("What's your last name?");
+fullName(firstName, lastName);
+fullName("Kate", "Robinson");
+
+
